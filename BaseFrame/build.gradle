@@ -5,8 +5,8 @@ plugins {
 
 }
 
-apply plugin:'com.github.dcendents.android-maven' //添加列
-    group='com.github.12313kaihuang' //添加列
+//apply plugin:'com.github.dcendents.android-maven' //添加列
+//    group='com.github.12313kaihuang' //添加列
 android {
     compileSdk 31
 
