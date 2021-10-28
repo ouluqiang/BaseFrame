@@ -4,15 +4,19 @@ plugins {
 }
 
 android {
-    compileSdk 30
-
+//    compileSdk 30
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
     defaultConfig {
         applicationId "com.fariso.composebase"
-        minSdk 21
-        targetSdk 30
-        versionCode 1
-        versionName "1.0"
-
+//        minSdk 21
+//        targetSdk 30
+//        versionCode 1
+//        versionName "1.0"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 100
+        versionName "v 1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary true
@@ -36,15 +40,15 @@ android {
     buildFeatures {
         compose true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion compose_version
-        kotlinCompilerVersion '1.5.10'
-    }
-    packagingOptions {
-        resources {
-            excludes += '/META-INF/{AL2.0,LGPL2.1}'
-        }
-    }
+//    composeOptions {
+//        kotlinCompilerExtensionVersion compose_version
+//        kotlinCompilerVersion '1.5.10'
+//    }
+//    packagingOptions {
+//        resources {
+//            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+//        }
+//    }
 }
 
 dependencies {
@@ -63,6 +67,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
-    implementation 'com.github.ouluqiang:BaseFrame:1.0.0'
+//    implementation 'com.github.ouluqiang:BaseFrame:1.0.1'
     implementation 'com.github.BobbySir:CommonBaseLibrary:1.3'
 }
