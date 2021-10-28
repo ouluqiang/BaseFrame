@@ -1,20 +1,20 @@
-//支持将项目发布到maven仓库的插件
-apply plugin: 'maven'
-
-uploadArchives { //新增 ，因为Android Studio gradle 支持maven插件，所以可以添加此task
-    configuration = configurations.archives
-    repositories {
-        mavenDeployer {
-            repository(url: 'https://repository.boe.com.cn/repository/releases/') {//maven 仓库路径无需修改
-                authentication(userName: '***', password: '****')//maven 账号密码
-            }
-            pom.project {
-                version '1.0.0' //版本名称
-                artifactId 'zdialog'  //定义的依赖名称
-                groupId 'com.zxy.zdialog'  //定义的依赖路径
-                packaging 'aar' //填写aar
-                description 'first' //更新描述
-            }
-        }
-    }
-}
+////支持将项目发布到maven仓库的插件
+//apply plugin: 'maven'
+//
+//uploadArchives { //新增 ，因为Android Studio gradle 支持maven插件，所以可以添加此task
+//    configuration = configurations.archives
+//    repositories {
+//        mavenDeployer {
+//            repository(url: 'https://repository.boe.com.cn/repository/releases/') {//maven 仓库路径无需修改
+//                authentication(userName: '***', password: '****')//maven 账号密码
+//            }
+//            pom.project {
+//                version '1.0.0' //版本名称
+//                artifactId 'zdialog'  //定义的依赖名称
+//                groupId 'com.zxy.zdialog'  //定义的依赖路径
+//                packaging 'aar' //填写aar
+//                description 'first' //更新描述
+//            }
+//        }
+//    }
+//}
