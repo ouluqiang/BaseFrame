@@ -8,5 +8,6 @@
 //    }
 //}
 rootProject.name = "ComposeBase"
-include ':app'
+//include ':app'
 include ':BaseFrame'
+include ':app'

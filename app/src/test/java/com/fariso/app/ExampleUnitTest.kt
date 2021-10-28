@@ -1,4 +1,4 @@
-package com.fariso.composebase
+package com.fariso.app
 
 import org.junit.Test
 

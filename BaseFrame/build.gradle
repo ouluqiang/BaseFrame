@@ -9,14 +9,18 @@ apply plugin:'com.github.dcendents.android-maven' //添加列
 group='com.github.ouluqiang' //添加列
 
 android {
-    compileSdk 31
-
+//    compileSdk 31
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
     defaultConfig {
-        minSdk 21
-        targetSdk 31
-        versionCode 1
-        versionName "1.0"
-
+//        minSdk 21
+//        targetSdk 31
+//        versionCode 1
+//        versionName "1.0"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 100
+        versionName "v 1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
